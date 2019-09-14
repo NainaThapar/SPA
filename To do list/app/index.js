@@ -8,7 +8,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h2>To Do List</h2>
         <Main></Main>
       </div>
     );

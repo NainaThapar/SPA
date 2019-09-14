@@ -1,5 +1,6 @@
 import React from "react";
 import "./main.css";
+import cycle from "../../images/cycle.png";
 
 const Main = () => {
   let today = new Date();
@@ -28,10 +29,17 @@ const Main = () => {
 
   return (
     <div className="main-container">
-      <h3>Welcome to To-Do List Application</h3>
-      <p>
+      <div className="heading">MAKE IT HAPPEN</div>
+      <div className="design-quote">
+        LIFE IS ALL ABOUT <span className="balance">balance</span>
+      </div>
+      <div className="right-img">
+        <img src={cycle} width="100px" height="100px" />
+      </div>
+
+      <div style={{ display: "block" }}>
         Date: <span style={{ fontWeight: "bold" }}>{todayDate}</span>
-      </p>
+      </div>
       <p>
         Countdown:{" "}
         <span id="ct" style={{ fontWeight: "bold", color: "maroon" }}></span>
